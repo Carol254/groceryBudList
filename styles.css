@@ -1,0 +1,13 @@
+.grocery-container{
+    margin-top: 2rem;
+    transition: 2ms;
+    visibility: hidden;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+}
