@@ -14,16 +14,34 @@
 .grocery-item{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
 .show-container {
     visibility: visible;
 }
-.alert-danger {
+.alert-danger{
     color: #721c24;
     background-color: #f8d7da;
 }
 .alert-success {
     color: #155724;
     background-color: #d4edda;
+}
+.clear-btn{
+    color: #721c24;
+    background-color: #f8d7da;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px;
+}
+.submit-btn{
+    background-color: lightskyblue;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+
 }
