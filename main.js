@@ -36,16 +36,16 @@ function addItem(e){
         attr.value = id;
         element.setAttributeNode(attr);
         element.innerHTML = ` 
-                            <p class="title">Item</p>
-                            <div class="btn-container">
-                                <button type="button" class="edit-btn">
-                                    <i class="bi bi-pencil-fill"></i>
-                                </button>
+                                <p class="title">${value}</p>
+                                <div class="btn-container">
+                                    <button type="button" class="edit-btn">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </button>
 
-                                <button type="button" class="delete-btn">
-                                    <i class="bi bi-trash-fill"></i>
-                                </button>
-                            </div>
+                                    <button type="button" class="delete-btn">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </button>
+                                </div>
                              `;
         
 
