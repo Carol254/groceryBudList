@@ -90,6 +90,9 @@ function addToLocalStorage(id,value){
     console.log("added to local storage");
 
     grocery.value = '';
+    editFlag = false;
+    editId = "";
+    submitBtn.textContent = "submit";
 }
 // set back to default
 function setBackToDefault(){
