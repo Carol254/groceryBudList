@@ -54,6 +54,14 @@ function addItem(e){
         // show container
 
         container.classList.add("show-container");
+
+        // add to localStorage
+
+        addToLocalStorage(id,value);
+
+        // set back to Default
+
+        setBackToDefault();
         
 
     }else if(value !== '' && editFlag){
@@ -74,5 +82,17 @@ function displayAlert(text,action){
         alert.classList.remove(`alert-${action}`);
     },3000);
 }
+// 
+
 // local storage
+
+function addToLocalStorage(id,value){
+    console.log("added to local storage");
+
+    grocery.value = '';
+}
+// set back to default
+function setBackToDefault(){
+    console.log("set back to default");
+}
 // SetUp Items
