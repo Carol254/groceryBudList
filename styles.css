@@ -2,7 +2,9 @@
  text-align: center;
 }
 .grocery-form{
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
 }
 .grocery-container{
     margin-top: 2rem;
