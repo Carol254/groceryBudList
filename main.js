@@ -28,6 +28,8 @@ function addItem(e){
     
     if(value && !editFlag){
         console.log('add item to the list');
+        
+
     }else if(value !== '' && editFlag){
         console.log('editing');
     }else{

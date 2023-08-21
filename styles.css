@@ -3,6 +3,9 @@
     transition: 2ms;
     visibility: hidden;
 }
+.show-container {
+    visibility: visible;
+}
 .alert-danger {
     color: #721c24;
     background-color: #f8d7da;
