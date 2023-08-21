@@ -83,7 +83,7 @@ function displayAlert(text,action){
     setTimeout(()=>{
         alert.textContent = '';
         alert.classList.remove(`alert-${action}`);
-    },3000);
+    },1000);
 }
 // clear items
 
@@ -98,7 +98,13 @@ function clearItems(){
         });
     }
 
-    container.classList.remove('show-container');
+    container.classList.remove("show-container");
+
+    displayAlert("List is empty!","danger");
+
+    setBackToDefault();
+
+    localStorage.removeItem('list');
    
 }
 
