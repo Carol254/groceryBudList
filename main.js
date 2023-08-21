@@ -28,6 +28,25 @@ function addItem(e){
     
     if(value && !editFlag){
         console.log('add item to the list');
+        const element = document.createElement('artcle');
+        // add class
+        element.classList.add('grocery-item');
+        // add id
+        const attr = document.createAttribute('data-id');
+        attr.value = id;
+        element.setAttributeNode(attr);
+        element.innerHTML = ` 
+                            <p class="title">Item</p>
+                            <div class="btn-container">
+                                <button type="button" class="edit-btn">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+
+                                <button type="button" class="delete-btn">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </div>
+                             `;
         
 
     }else if(value !== '' && editFlag){
