@@ -14,9 +14,12 @@ let editElement;
 let editFlag = false;
 let editID = ''; 
 
-// event listeners
+// *** EVENT LISTENERS ***
 // (submit form)
 form.addEventListener('submit',addItem);
+// clear items
+
+clearBtn.addEventListener('click', clearItems);
 
 
 //***FUNCTIONS ***
@@ -82,7 +85,22 @@ function displayAlert(text,action){
         alert.classList.remove(`alert-${action}`);
     },3000);
 }
-// 
+// clear items
+
+function clearItems(){
+     console.log('clear items');
+
+    const items = document.querySelectorAll('.grocery-item');
+
+    if(items.length > 0){
+        items.forEach((item)=>{
+            list.removeChild(item);
+        });
+    }
+
+    container.classList.remove('show-container');
+   
+}
 
 // ***LOCAL STORAGE ***
 
