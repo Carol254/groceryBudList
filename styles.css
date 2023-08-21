@@ -1,7 +1,18 @@
+.section-center{
+ text-align: center;
+}
+.grocery-form{
+    margin: auto;
+}
 .grocery-container{
     margin-top: 2rem;
     transition: 2ms;
     visibility: hidden;
+}
+.grocery-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .show-container {
     visibility: visible;

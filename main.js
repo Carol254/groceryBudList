@@ -83,7 +83,7 @@ function displayAlert(text,action){
     setTimeout(()=>{
         alert.textContent = '';
         alert.classList.remove(`alert-${action}`);
-    },1000);
+    },2000);
 }
 // clear items
 
