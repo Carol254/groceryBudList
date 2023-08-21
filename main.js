@@ -19,7 +19,7 @@ let editID = '';
 form.addEventListener('submit',addItem);
 
 
-// functions
+//***FUNCTIONS ***
 
 function addItem(e){
     e.preventDefault();
@@ -84,7 +84,7 @@ function displayAlert(text,action){
 }
 // 
 
-// local storage
+// ***LOCAL STORAGE ***
 
 function addToLocalStorage(id,value){
     console.log("added to local storage");
